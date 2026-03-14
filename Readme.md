@@ -12,10 +12,25 @@ This project implements a machine learning system for detecting human actions ba
 
 The project uses the **MHEALTH Dataset**, which is designed for human behavior analysis based on multimodal body sensing.
 
-- **Kaggle Link**: [Mobile Health Human Behavior Analysis](https://www.kaggle.com/datasets/gaurav2022/mobile-health-human-behavior-analysis)
-- **Note**: The raw data file (`mhealth_raw_data.csv`) is excluded from this repository due to size. Please download it from Kaggle and place it in the project root to run the notebook.
+- **Kaggle Link**: [Mobile Health Human Behavior Analysis](https://www.kaggle.com/datasets/gaurav2022/mobile-health)
+- **Note**: Large data files are excluded from this repository. Please download the dataset from Kaggle and place the files in the project root to run the notebook.
 
-## Setup
+## Installation & Setup
 
-1. Install requirements: `pip install pandas numpy matplotlib seaborn catboost scikit-learn`.
-2. Open and run `Human_Action_Detector.ipynb`.
+1. **Create a Virtual Environment**:
+   ```bash
+   python -m venv venv
+   source venv/Scripts/activate  # On Windows: venv\Scripts\activate
+   ```
+
+2. **Install Requirements**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Download Dataset**:
+   - Download from the [Kaggle link](https://www.kaggle.com/datasets/gaurav2022/mobile-health).
+   - Extract and place the data files (e.g., `mhealth_raw_data.csv`) in the project directory.
+
+4. **Run the Notebook**:
+   - Open and run `Human_Action_Detector.ipynb`.
